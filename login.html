@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendSense | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-brand">
+      <a class="brand" href="login.html">
+        <span class="brand-mark">S</span> SpendSense
+      </a>
+
+      <div class="brand-copy">
+        <span class="eyebrow">YOUR MONEY, YOUR FUTURE</span>
+        <h1>Make every rupee<br><span>count.</span></h1>
+        <p>
+          A calmer, clearer way to understand your spending,
+          build better habits, and work toward your goals.
+        </p>
+
+        <div class="mini-stats">
+          <div><strong>Track</strong><small>Every transaction</small></div>
+          <div><strong>Plan</strong><small>Smarter budgets</small></div>
+          <div><strong>Grow</strong><small>Your savings</small></div>
+        </div>
+      </div>
+
+      <p class="auth-footnote">
+        Simple money habits. Stronger financial future.
+      </p>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-tabs">
+        <button class="auth-tab active" type="button" data-mode="login">Log in</button>
+        <button class="auth-tab" type="button" data-mode="signup">Create account</button>
+      </div>
+
+      <div class="auth-heading">
+        <h2 id="authTitle">Welcome back</h2>
+        <p id="authSubtitle">Enter your details to access your dashboard.</p>
+      </div>
+
+      <form id="authForm">
+        <label for="nameField" id="nameLabel" class="hidden">Full name</label>
+        <input
+          id="nameField"
+          type="text"
+          placeholder="Full name"
+          autocomplete="name"
+          class="hidden"
+        >
+
+        <label for="emailField">Email address</label>
+        <input
+          id="emailField"
+          type="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        >
+
+        <label for="passwordField">Password</label>
+        <input
+          id="passwordField"
+          type="password"
+          placeholder="At least 6 characters"
+          autocomplete="current-password"
+          minlength="6"
+          required
+        >
+
+        <p id="authMessage" class="form-message" aria-live="polite"></p>
+
+        <button class="btn btn-primary btn-full" id="authSubmit" type="submit">
+          Log in <span>→</span>
+        </button>
+      </form>
+
+      <p class="auth-switch" id="authSwitch">
+        New to SpendSense?
+        <button type="button" data-mode="signup">Create an account</button>
+      </p>
+
+      <p class="security-note">
+        <span>ⓘ</span>
+        Demo version: account details are stored in this browser only.
+        Do not use a real password.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
